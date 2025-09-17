@@ -197,6 +197,13 @@ a {
     font-weight: 400;
 }
 
+#my-socials #socials-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
 #my-socials img {
     width: 200px;
     height: 200px;
@@ -224,3 +231,4 @@ a {
     transition: transform 0.3s ease-in-out;
 
 }
+
