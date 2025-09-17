@@ -154,6 +154,8 @@ a {
 
 @media (max-width: 700px) {
     #my-story, #my-socials {
+        display: block;
+        width: 90%;
         margin: 20px auto 70px auto;
         scroll-margin-top: 170px;
     }
@@ -238,5 +240,6 @@ a {
     transition: transform 0.3s ease-in-out;
 
 }
+
 
 
