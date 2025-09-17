@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;   
+    font-family: "Fira code", Helvetica, sans-serif;
+}
+
+:root {
+    --default-color: #f2f2f2;
+    --background-color-gray: #2c2c2c;
+    --hover-color1: #ffcc00;
+    --hover-color2: #ff0095;
+    --hover-color3: #00e5ff;
+    --hover-color4: #d21404;
+}
+
+html {
+    display: block;
+    font-size: 2vh;
+    color: var(--default-color);
+    background: linear-gradient(
+    45deg,
+    gray,
+    black
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--default-color);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95px;
+    margin: 0;
+    background-color: var(--background-color-gray);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 1000px) {
+    #navbar {
+        height: 150px;
+    }
+    #navbar ul {
+        font-size: 1.2rem;
+        gap: 30px;
+    }
+}
+
+#navbar ul {
+    font-size: 1.7rem;
+    color: var(--default-color);
+    display: inline-flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 60px;
+}
+
+.intro {
+    justify-content: center;
+    text-align: center;
+    color: var(--default-color);
+    width: 100%;
+    margin: 30vh auto 19vh auto;
+}
+
+.intro h1 {
+    font-size: 7rem;
+}
+
+.intro h1:hover {
+    color: var(--hover-color3);
+    transition: color 0.3s ease-in-out;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    margin-top: -7vh;
+}
+
+.intro h1, .intro h2 {
+    font-family: monospace;
+}
+
+#github-link {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+#github-link:hover, #nav-hover:hover {
+    color: var(--hover-color1);
+    transition: color 0.3s ease-in-out;
+}
+
+#ig-link, #UST {
+    font-weight: 600;
+}
+
+#ig-link:hover, #UST:hover {
+    color: var(--hover-color2);
+    transition: color 0.3s ease-in-out;
+}
+
+#UST:hover {
+    color:var(--hover-color1);
+    transition: color 0.3s ease-in-out;
+}
+
+.divider {
+    margin: auto;
+    width: 80%;
+    border: 3px solid var(--default-color);
+    border-radius: 100%;
+    opacity: 70%;
+}
+
+#about-me {
+    color: var(--default-color);
+    width: 70%;
+    min-width: 300px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: monospace, serif;
+    text-align: center;
+    margin: 50px auto 100px auto;
+}
+
+#my-story, #my-socials {
+    scroll-margin-top: 120px;
+    color: var(--default-color);
+    width: 100%;
+    min-width: 300px;
+    font-weight: 200;
+    font-family: monospace, serif;
+    text-align: center;
+    margin: 30px auto 100px auto;
+}
+
+#my-story h1, #my-socials h1 {
+    font-size: 3rem;
+    font-weight:400;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+#my-story img {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+
+#my-story figcaption {
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--default-color);
+}
+
+#my-story .me {
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    max-width: 1000px;
+}
+
+#my-socials #socials-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#socials-images figcaption {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#my-socials img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+#ig-profile:hover {
+    transform: scale(1.1);
+    color: var(--hover-color2);
+    transition: transform 0.3s ease-in-out;
+}
+
+#fb-profile:hover {
+    transform: scale(1.1);
+    color: var(--hover-color3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#gh-profile:hover {
+    transform: scale(1.1);
+    color: var(--hover-color4);
+    transition: transform 0.3s ease-in-out;
+}
