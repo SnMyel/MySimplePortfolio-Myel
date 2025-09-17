@@ -152,6 +152,13 @@ a {
     margin: 30px auto 100px auto;
 }
 
+@media (max-width: 700px) {
+    #my-story, #my-socials {
+        margin: 20px auto 70px auto;
+        scroll-margin-top: 170px;
+    }
+}
+
 #my-story h1, #my-socials h1 {
     font-size: 3rem;
     font-weight:400;
@@ -231,4 +238,5 @@ a {
     transition: transform 0.3s ease-in-out;
 
 }
+
 
